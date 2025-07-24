@@ -163,10 +163,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">VideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide</h1>
+            <h1 class="title is-1 publication-title">Improving Video Diffusion Transformer Training by Multi-Feature  Fusion and Alignment from Self-Supervised Vision Encoders</h1>
             <div class="is-size-4 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
+              <!-- <span class="author-block">
                 <a href="https://github.com/DoHunLee1" target="_blank">Dohun Lee</a><sup>*</sup>,</span>
                 <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=ndWU-84AAAAJ&hl=en" target="_blank">Bryan S Kim</a><sup>*</sup>,</span>
@@ -176,16 +176,16 @@
                         <a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en" target="_blank">Jong Chul Ye</a></span>
             </div> 
               <div class="is-size-4 publication-authors">
-                <span class="author-block" style="color:black"> KAIST </span>
+                <span class="author-block" style="color:black"> KAIST </span> -->
                   <!-- <br>Conferance name and year</span> -->
-                <span class="eql-cntrb" style="color:black"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                <!-- <span class="eql-cntrb" style="color:black"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                 <span class="eql-cntrb" style="color:black; display: block;"><br> CVPR 2025</span>
-              </div>
+              </div> -->
           
               <!-- Paper authors -->
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/2410.04364" target="_blank"
+                    <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     </ARXIV>
                     <span class="icon">
@@ -197,12 +197,12 @@
               
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/DoHunLee1/VideoGuide" target="_blank"
+                    <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Coming soon</span>
                     </a>
                   </span>
             </div>
@@ -298,7 +298,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="font-size:18px;">
-            Text-to-image (T2I) diffusion models have revolutionized visual content creation, but extending these capabilities to text-to-video (T2V) generation remains a challenge, particularly in preserving temporal consistency. Existing methods that aim to improve consistency often cause trade-offs such as reduced imaging quality and impractical computational time. To address these issues we introduce VideoGuide, a novel framework that enhances the temporal consistency of pretrained T2V models without the need for additional training or fine-tuning. Instead, VideoGuide leverages any pretrained video diffusion model (VDM) or itself as a guide during the early stages of inference, improving temporal quality by interpolating the guiding model’s denoised samples into the sampling model's denoising process. The proposed method brings about significant improvement in temporal consistency and image fidelity, providing a cost-effective and practical solution that synergizes the strengths of various video diffusion models. Furthermore, we demonstrate prior distillation, revealing that base models can achieve enhanced text coherence by utilizing the superior data prior of the guiding model through the proposed method.
+            Video diffusion models have advanced rapidly in the recent years as a result of series of architectural innovations (e.g., diffusion transformers) and use of novel training objectives (e.g., flow matching). In contrast, less attention has been paid to improving the feature representation power of such models. In this work, we argue that video diffusion model training can benefit from aligning the intermediate features of the video generator with features obtained from pre-trained vision encoders. We propose a new metric and conduct an in-depth analysis of various vision encoders to evaluate their discriminability and temporal consistency, thereby assessing their suitability for video feature alignment. 
+Based on the analysis, we present Align4Gen which provides a novel multi-feature fusion and alignment method integrated into video diffusion model training. We evaluate Align4Gen both for unconditional and class-conditional video generation tasks and show that it results in improved video generation as quantified by various metrics.
         </div>
       </div>
     </div>
