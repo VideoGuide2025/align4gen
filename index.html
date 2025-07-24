@@ -317,14 +317,13 @@ Based on the analysis, we present Align4Gen which provides a novel multi-feature
       <div class="column is-four-sixths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="static/images/fig_pipeline.jpg" alt="fig_pipeline"/>
+          <img src="static/images/method_2.png" alt="fig_pipeline"/>
           <p style=" font-size:18px; margin-top:30px;">
-            VideoGuide enhances temporal quality in video diffusion models without additional training 
-            or fine-tuning by leveraging a pretrained model as a guide. During inference, it uses a 
-            teacher model to provide a temporally consistent sample, which is interpolated with 
-            the student model's output to improve consistency. This process is applied only in the early 
-            steps of inference and includes a low-pass filter to refine high-frequency details. 
-            VideoGuide effectively improves temporal consistency while preserving imaging quality and motion smoothness.
+            We present Align4Gen, a training-time framework designed to enhance video diffusion models by leveraging the rich and diverse representations of pre-trained vision encoders. To guide this design, we first introduce a novel metric that measures both the discriminability and temporal consistency of visual features. Through extensive analysis, we find that features from image-based encoders not only provide stronger semantic signals but also exhibit greater temporal invariance compared to those from video-based models. Additionally, we observe that different image encoders capture complementary frequency information, with some focusing on coarse structures and others emphasizing fine-grained details.
+
+Based on these insights, Align4Gen introduces a feature fusion and alignment strategy that integrates multi-frequency features from multiple image encoders into the training process. By aligning the intermediate features of a video diffusion model with those extracted from frozen pre-trained encoders, the model is encouraged to learn temporally consistent and semantically meaningful representations. This alignment is applied during training without altering the inference pipeline.
+
+Align4Gen is evaluated on both unconditional and class-conditional video generation tasks and consistently improves the temporal quality, visual fidelity, and motion smoothness of the generated videos.
           </p>
       
         </div>
